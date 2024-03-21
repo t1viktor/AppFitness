@@ -1,0 +1,222 @@
+:root{
+    --cor1: white ;
+    --cor2: rgb(120, 46, 240) ;
+    --borda: rgba(81, 49, 156, 0.425) ;
+    --background: rgba(0, 0, 0, 0.514) ;
+}
+
+@keyframes shadow {
+
+    0%{box-shadow:0 0 15px rgb(235, 85, 255);}
+    50%{box-shadow:0 0 10px rgb(89, 9, 105);}
+    100%{box-shadow:0 0 15px rgb(234, 0, 255);}
+
+}
+
+header{
+
+    height: 300px;
+    width: 95vw;
+    background-image: url(/img/academia_musculacao.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px 30px;
+    display: flex;
+    border: solid var(--borda) 3px;
+    border-radius: 12px;
+    animation-name: shadow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+}
+
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 140px;
+    top: 70px;
+    gap: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header li {
+    transition: all .3s ease-in-out;
+    padding: 10px;
+    
+
+}
+
+header a{
+    color: rgb(203, 189, 226);
+    padding: 10px;
+    font-family: "Madimi One", sans-serif;
+    font-size: 18px;
+}
+
+header li:hover{
+    transform: translateY(-7px); 
+}
+
+header li a:hover{
+    
+    color: rgb(255, 0, 191);
+    
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+    padding: 40px  100px;
+}
+
+h1 {
+    
+    font-size: 80px;
+    font-family: "Crimson Pro", serif;
+    color: rgb(255, 254, 255);
+    text-shadow: 0 0 18px rgb(177, 30, 177);
+
+}
+
+p{
+    
+    font-size: 80px;
+    font-family: "Crimson Pro", serif;
+    color: rgb(243, 127, 233); 
+    font-weight: bold;
+    text-shadow: 0 0 20px rgb(41, 3, 41) ;
+}
+
+
+
+
+section {
+    
+    max-width: 60rem;
+    max-height: 80rem;
+    border: solid var(--borda) 3px;
+    border-radius: 13px;
+    color: aliceblue;
+    margin-bottom: 60px;
+    font-family: "Truculenta", sans-serif;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    transition: all .4s ease-in-out;
+    
+    
+}
+
+section:hover{
+    border: solid 3px purple;
+    cursor: pointer;
+}
+
+strong {
+    color: rgb(125, 98, 161);
+}
+
+h2{
+    color: rgb(173, 76, 173) ;
+}
+
+.sec1 {
+
+    margin-top: 50px;   
+
+}
+
+dd ul li{
+    transition: all .3s ease-in-out ;
+
+}
+
+dd ul li:hover{
+
+    cursor: pointer;
+    color: rgb(238, 112, 227);
+}
+
+@keyframes texto{
+    0%{color: rgb(230, 4, 211);}
+    50%{color: rgb(205, 97, 238);}
+    100%{color: rgb(70, 4, 145);}
+}
+
+.sec3 h2{
+    transition: all .3s ease-in-out ;
+    animation-name: texto;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+button{
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    border: solid var(--borda) 2px;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: blueviolet;
+    margin-left: 28rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+button:hover{
+   transform: scale(1.03);
+   cursor: pointer;
+   background-color: rgb(209, 19, 209);
+   color: rgb(0, 0, 0);
+   border: solid 2px purple ;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.253);
+    border-top: 1px solid rgba(255, 255, 255, 0.274);
+  
+
+}
+
+footer img{
+    max-width: 60px;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+footer a{
+    color: var(--cor1);
+}
+
+footer a:hover{
+    color: yellow;
+}
+
+footer a img{
+    
+    transition: all .3s ease-in-out;
+}
+
+footer a img:hover{
+
+    transform: scale(1.2);
+
+}
+    
+  
